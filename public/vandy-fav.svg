@@ -1,0 +1,24 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="meshBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" />
+    </filter>
+  </defs>
+  
+  <rect width="512" height="512" rx="100" fill="#FF4D4D" /> <!-- Màu nền Hỏa chủ đạo -->
+  
+  <!-- Các điểm màu Mesh -->
+  <g filter="url(#meshBlur)">
+    <circle cx="400" cy="100" r="200" fill="#2ECC71" opacity="0.6" /> <!-- Mộc góc trên -->
+    <circle cx="100" cy="400" r="250" fill="#FF8C42" opacity="0.8" /> <!-- Hỏa cam -->
+    <circle cx="450" cy="450" r="150" fill="#FF007F" opacity="0.5" /> <!-- Hỏa hồng neon -->
+  </g>
+
+  <!-- Logo VandY trắng tinh khiết -->
+  <g fill="white">
+    <path d="M120 220 C100 180, 180 150, 210 200 L240 320 L270 200 C300 150, 380 180, 360 220 L330 310 Q310 340, 240 340 Q170 340, 150 310 Z" />
+    <path d="M140 210 Q90 150, 60 230 Q90 210, 130 240 Z" />
+    <path d="M372 210 Q422 150, 452 230 Q422 210, 382 240 Z" />
+  </g>
+  <path d="M180 370 Q256 420, 332 370" fill="none" stroke="white" stroke-width="18" stroke-linecap="round" />
+</svg>
