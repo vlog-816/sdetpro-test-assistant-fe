@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import api from "../lib/api";
 import { Link } from "react-router-dom";
 
@@ -49,7 +49,7 @@ export default function GeneratePage() {
     }
   };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       analyze();
     }

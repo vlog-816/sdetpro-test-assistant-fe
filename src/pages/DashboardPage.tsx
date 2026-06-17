@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import api from "../lib/api";
 import { useAuthStore } from "../state/auth";
 
@@ -12,6 +12,7 @@ export default function DashboardPage() {
   const [filter, setFilter] = useState<"all" | "mine" | "published">("all");
 
   const user = useAuthStore((s) => s.user);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setLoading(true);
@@ -91,8 +92,8 @@ export default function DashboardPage() {
   return (
     <div className="space-y-6">
       {/** Go back */}
-      <Link
-        to={-1}
+      <button
+        onClick={() => navigate(-1)}
         className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 transition-colors"
       >
         <svg
@@ -108,8 +109,8 @@ export default function DashboardPage() {
             d="M15 19l-7-7 7-7"
           />
         </svg>
-        <span>Go back</span>
-      </Link>
+        Go back
+      </button>
 
       {/**Header */}
       <div>
