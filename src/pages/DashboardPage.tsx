@@ -92,7 +92,7 @@ export default function DashboardPage() {
   return (
     <div className="space-y-6">
       {/** Go back */}
-      <button
+      {/* <button
         onClick={() => navigate(-1)}
         className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 transition-colors"
       >
@@ -110,7 +110,7 @@ export default function DashboardPage() {
           />
         </svg>
         Go back
-      </button>
+      </button> */}
 
       {/**Header */}
       <div>
