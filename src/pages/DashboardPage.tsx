@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import api from "../lib/api";
 import { useAuthStore } from "../state/auth";
 
@@ -12,7 +12,6 @@ export default function DashboardPage() {
   const [filter, setFilter] = useState<"all" | "mine" | "published">("all");
 
   const user = useAuthStore((s) => s.user);
-  const navigate = useNavigate();
 
   useEffect(() => {
     setLoading(true);
