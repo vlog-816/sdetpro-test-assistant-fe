@@ -37,7 +37,7 @@ function Layout({ children }: { children: React.JSX.Element }) {
             {/** Title */}
             <div className="flex items-center gap-1">
               <h1 className="text-sm md:text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                AI-POWERED TEST ASSISTANT | trainee Vy Vy
+                AI-POWERED TEST ASSISTANT
               </h1>
             </div>
             {/** Navigation */}

@@ -209,25 +209,25 @@ export default function DashboardPage() {
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Issue Key
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Status
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                   mode
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                   owner
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                   created
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                   time
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                   cost
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
                   actions
                 </th>
               </tr>
@@ -238,7 +238,7 @@ export default function DashboardPage() {
                   key={item._id}
                   className="hover:bg-gray-50 transition-colors"
                 >
-                  <td className="px-6 py-3 whitespace-nowrap">
+                  <td className="px-6 py-3  whitespace-nowrap">
                     <div className="flex items-center gap-2">
                       <span className="font-medium text-gray-900 uppercase">
                         {item.issueKey}
@@ -250,10 +250,10 @@ export default function DashboardPage() {
                       )}
                     </div>
                   </td>
-                  <td className="px-6 py-3 whitespace-nowrap">
+                  <td className="px-6 py-3  whitespace-nowrap">
                     {getStatusBadge(item.status)}
                   </td>
-                  <td className="px-6 py-3 whitespace-nowrap">{item.mode}</td>
+                  <td className="px-6 py-3 whitespace-nowrap capitalize">{item.mode}</td>
                   <td className="px-6 py-3 whitespace-nowrap">
                     {item.email === user?.email ? (
                       <span className="text-gray-900 font-medium">You</span>
